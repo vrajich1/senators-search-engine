@@ -13,7 +13,7 @@ const getSenators = async (url) => fetch(url).then(res => res.json()).then(data 
 const searchSenators = (senators = [], filter = { party: '', state: '' }) => {
   // Make sure the filter.party and filter.state are both being used
   if (filter.party && filter.state)
-    return senators.filter(senator => filter.party === senator.party && filter.state === senator.state.toUpperCase())
+    return senators.filter(senator => filter.party === senator.party && filter.state.toUpperCase() === senator.state.toUpperCase())
 
   // Determine which filter is being used and filter appropriately predicated upon the filter object 
   return filter.party ?
