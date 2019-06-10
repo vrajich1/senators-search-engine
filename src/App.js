@@ -12,6 +12,7 @@ import Search from './components/Search'
 function App() {
   return (
     <div className="App">
+      <h1>Welcome to Our Senator's Search</h1>
       <Link to="/">Home</Link>{' '}
       <Link to="/search">Search</Link>
       <Route path="/" exact>

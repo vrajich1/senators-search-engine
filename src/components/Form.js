@@ -19,7 +19,7 @@ export default props => {
       }}
     >
       <label htmlFor="state">State</label>
-      <input type="text" className="inPut" name="state" minLength="2" maxLength="2" value={filterState} onChange={e => setFilterState(e.target.value)} />
+      <input type="search" className="inPut" name="state" minLength="2" maxLength="2" value={filterState} onChange={e => setFilterState(e.target.value)} />
       {/* <label htmlFor="name">Last Name</label>
       <input type="text" className="inPut" name="lastname" value={filterName} onChange={e => setName(e.target.value)} /> */}
       <select value={filterParty} onChange={e => setParty(e.target.value)}>
@@ -29,6 +29,7 @@ export default props => {
         <option value="Independent">Independent</option>
       </select>
       <input type="submit" value="Submit" />
+      {/* <input type="reset" value="Reset" /> */}
     </form>
     </div>
   )
